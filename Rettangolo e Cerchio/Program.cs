@@ -11,20 +11,24 @@ namespace Rettangolo_e_Cerchio
     {
         static void Main(string[] args)
         {
-            Rettangolo r = new Rettangolo();
-            r.L1 = double.Parse(Console.ReadLine());
-            r.L2 = double.Parse(Console.ReadLine()); 
-            double areaR = r.Area();
-            double perimetroR = r.Perimetro();
-            Console.WriteLine(areaR);
-            Console.WriteLine(perimetroR);
+            Rettangolo r = new Rettangolo(5,4);
+            r.ToString();
+            Console.WriteLine(r);
 
-            Cerchio c = new Cerchio();
-            c.Raggio = double.Parse(Console.ReadLine()); ;
-            double areaC = c.Area();
-            double perimetroC = c.Perimetro();
-            Console.WriteLine(areaC);
-            Console.WriteLine(perimetroC);
+            Rettangolo r2 = new Rettangolo(7, 5);
+            r2.ToString();
+            r2 = Rettangolo.Parse(r.ToString());
+            Console.WriteLine(r2);
+           
+
+            Cerchio c = new Cerchio(5);
+            c.ToString();
+            Console.WriteLine(c);
+
+            Cerchio c2 = new Cerchio(7);
+            c2.ToString();
+            c2 = Cerchio.Parse(c.ToString());
+            Console.WriteLine(c2);
 
             Console.ReadLine();
         }

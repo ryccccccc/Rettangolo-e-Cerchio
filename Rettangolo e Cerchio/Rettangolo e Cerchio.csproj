@@ -46,7 +46,6 @@
     <Compile Include="Cerchio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quadrato.cs" />
     <Compile Include="Rettangolo.cs" />
   </ItemGroup>
   <ItemGroup>
